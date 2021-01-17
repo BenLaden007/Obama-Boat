@@ -79,31 +79,15 @@ end
 })
 
  Page.Button({
-        Text = "buy chest",
-        Callback = function()
-
-while wait(1) do
-local chest = "Legendary Chest"
-game:GetService("Workspace").ItemBoughtFromShop:FireServer(chest)
-end
-end
-})
-
- Page.Button({
         Text = "Auto build",
         Callback = function()
         loadstring(game:HttpGet("http://dirtgui.xyz/BuildABoat.lua",true))()
 end
 })
 
- Page.Button({
-        Text = "Image importer",
-        Callback = function()
-        loadstring(game:HttpGet("http://dirtgui.xyz/BuildABoat.lua",true))()
-end
-})
 
-print "Auto build and image importer made by Sten#7871, afk-autofarm-loopbuilds made by me ("͌ F̍aͪz̃è Oͤb̐aͩḿā#1986)"
+
+print "Auto build made by Sten#7871, afk-autofarm-loopbuy made by me ("͌ F̍aͪz̃è Oͤb̐aͩḿā#1986)"
 
 
 
