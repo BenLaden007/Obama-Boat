@@ -45,14 +45,15 @@ end
  Page.Button({
         Text = "STOP AUTO : X",
         Callback = function()
-while wait(1) do
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+ if KeyPressed == "x" then
 
+local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
 
-local A_1 = ";rejoin"
-local A_2 = "All"
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(A_1, A_2)
+tpservice:Teleport(game.PlaceId, plr)
 end
+end)
 end
 })
 
