@@ -18,6 +18,8 @@ local Page = UI.New({
  Page.Button({
         Text = "Autofarm",
         Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        
 _G.Busy = true;
 
 spawn(function()
@@ -37,6 +39,20 @@ while _G.Busy do wait()
     workspace.ClaimRiverResultsGold:FireServer()
 end
 
+end
+})
+
+ Page.Button({
+        Text = "STOP AUTO : X",
+        Callback = function()
+while wait(1) do
+
+
+local A_1 = ";rejoin"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+end
 end
 })
 
