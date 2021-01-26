@@ -1,3 +1,5 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{Title="BoatHUB",Text="Gui and scripts except autobuild made by F̍aͪz̃è Oͤb̐aͩḿā", Duration=15})
+
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local UI = Material.Load({
@@ -18,8 +20,6 @@ local Page = UI.New({
  Page.Button({
         Text = "Autofarm",
         Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        
 _G.Busy = true;
 
 spawn(function()
@@ -38,7 +38,6 @@ while _G.Busy do wait()
     repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
     workspace.ClaimRiverResultsGold:FireServer()
 end
-
 end
 })
 
